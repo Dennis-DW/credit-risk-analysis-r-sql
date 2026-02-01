@@ -111,5 +111,3 @@ To scale this project for production, the following improvements are recommended
 * **Dockerization:** Containerize the pipeline to ensure it runs identically on any machine without manual package installation.
 * **Unit Testing:** Add `testthat` (R) and `pytest` (Python) to verify data transformations before plotting.
 * **Interactive Dashboard:** Migrate static R plots to a **Shiny App** for real-time data exploration by stakeholders.
-
-```
