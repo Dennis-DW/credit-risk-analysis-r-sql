@@ -19,12 +19,12 @@ env.bak/
 venv.bak/
 
 # Data files
-data/*.csv
-data/*.json
+# data/*.csv
+# data/*.json
 
 # Output files
-presentation_plots/
-*.png
+# presentation_plots/
+# *.png
 
 # System files
 .DS_Store
