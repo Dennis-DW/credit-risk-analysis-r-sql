@@ -6,8 +6,6 @@ The solution adopts a "Best Tool for the Job" philosophy:
 * **R (tidyverse + ggplot2):** Used for exploratory data analysis (EDA), SQL integration, and generating high-quality static reporting charts.
 * **Python (pandas):** Used for robust data validation, automated quality checks, and performance metrics calculation for the ML classifier.
 
----
-
 ##  Project Structure
 
 The project is organized into modular scripts to ensure reproducibility and ease of debugging.
@@ -48,7 +46,7 @@ The following datasets are used in this analysis:
 | **`predictions.csv`** | The output from the ML classifier being tested. | `transaction_id`, `predicted_category` |
 
 
-## ⚙️ Setup & Requirements
+## Setup & Requirements
 
 ### 1. R Dependencies
 
@@ -67,7 +65,6 @@ Run this command in your Terminal to install the necessary libraries:
 pip install pandas matplotlib numpy
 
 ```
-
 
 ## How to Run
 
@@ -90,11 +87,8 @@ source("analysis.R")
 > 2. It automatically saves the charts to `presentation_plots/`.
 > 3. It triggers the Python validation scripts to generate the quality report.
 > 4. It saves the Python results to the `data/` folder.
-> 
-> 
 
-
-## 📊 Outputs & Deliverables
+## Outputs & Deliverables
 
 After execution, the following artifacts are generated:
 
@@ -109,16 +103,13 @@ After execution, the following artifacts are generated:
 | **`data/`** | `part3_summary_charts.png` | **Python Dashboard**: Data Quality & Accuracy Visuals |
 |  | `validation_summary.json` | Raw metrics for the validation report |
 
----
 
-## 🔮 Future Improvements
+## Future Improvements
 
 To scale this project for production, the following improvements are recommended:
 
 * **Dockerization:** Containerize the pipeline to ensure it runs identically on any machine without manual package installation.
 * **Unit Testing:** Add `testthat` (R) and `pytest` (Python) to verify data transformations before plotting.
 * **Interactive Dashboard:** Migrate static R plots to a **Shiny App** for real-time data exploration by stakeholders.
-
----
 
 ```
